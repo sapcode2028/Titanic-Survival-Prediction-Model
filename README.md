@@ -1,47 +1,31 @@
-This project implements a machine learning model to predict passenger survival on the Titanic using the famous Kaggle Titanic dataset. The dataset provides details such as passenger class, sex, age, number of siblings/spouses aboard, number of parents/children aboard, ticket fare, cabin, and port of embarkation.
+**This project is an end-to-end Machine Learning pipeline that predicts whether a passenger survived the Titanic disaster. It uses the famous Kaggle Titanic dataset for training, applies Logistic Regression for prediction, and provides a Flask web application (hosted via ngrok) for real-time predictions through a browser interface.
 
-The aim of the model is to analyze these features and classify whether a passenger would have survived (1) or not (0).
+Features
 
-Key Features:
+Data Preprocessing & Cleaning
 
-Data Preprocessing:
+Handles missing values in Age, Embarked, and Cabin.
 
-Handling missing values (Age, Embarked, Fare, etc.)
+Encodes categorical variables (Sex, Embarked).
 
-Feature engineering (e.g., Family size, Title extraction from Name, etc.)
+Exploratory Data Analysis (EDA)
 
-Encoding categorical features (Sex, Embarked, Titles)
+Visualizations with Seaborn & Matplotlib.
 
-Normalization/Scaling for numerical attributes
+Survival distribution across gender, class, and age groups.
 
-Exploratory Data Analysis (EDA):
+Model Training & Evaluation
 
-Visualizations of survival rates across different classes, genders, and age groups
+Logistic Regression model implemented with scikit-learn.
 
-Correlation heatmaps and distribution plots to understand feature importance
+Model saved as titanic_model.pkl using Joblib.
 
-Model Training:
+Accuracy evaluation on both training and test sets.
 
-Implementation of multiple machine learning algorithms such as:
+Deployment
 
-Logistic Regression
+Flask web app with an HTML form for user input.
 
-Random Forest Classifier
+ngrok integration to expose the app to the web.
 
-Support Vector Machines (SVM)
-
-Gradient Boosting / XGBoost
-
-Hyperparameter tuning using GridSearchCV/RandomizedSearchCV
-
-Model Evaluation:
-
-Accuracy, Precision, Recall, F1-Score, and ROC-AUC metrics
-
-Cross-validation to ensure model robustness
-
-Deployment Ready:
-
-Final trained model can be serialized using joblib or pickle
-
-Integrated prediction function that accepts passenger details and outputs survival prediction
+User-friendly survival prediction results**

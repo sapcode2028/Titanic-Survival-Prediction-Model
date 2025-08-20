@@ -1,4 +1,4 @@
-**This project is an end-to-end Machine Learning pipeline that predicts whether a passenger survived the Titanic disaster. It uses the famous Kaggle Titanic dataset for training, applies Logistic Regression for prediction, and provides a Flask web application (hosted via ngrok) for real-time predictions through a browser interface.
+This project is an end-to-end Machine Learning pipeline that predicts whether a passenger survived the Titanic disaster. It uses the famous Kaggle Titanic dataset for training, applies Logistic Regression for prediction, and provides a Flask web application (hosted via ngrok) for real-time predictions through a browser interface.
 
 Features
 

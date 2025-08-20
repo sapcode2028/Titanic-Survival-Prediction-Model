@@ -28,4 +28,4 @@ Flask web app with an HTML form for user input.
 
 ngrok integration to expose the app to the web.
 
-User-friendly survival prediction results**
+User-friendly survival prediction results.
